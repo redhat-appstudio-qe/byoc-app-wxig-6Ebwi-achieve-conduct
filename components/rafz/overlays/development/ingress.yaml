@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: rafz
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: rafz
+    app.kubernetes.io/part-of: byoc-app-wxig
+  name: rafz
+spec:
+  rules:
+  - host: rafz-byoc-cwbq-tenant.apps.cluster-7z8tc.7z8tc.sandbox2355.opentlc.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: rafz
+            port:
+              number: 8081
+        path: /
+        pathType: ImplementationSpecific
+status:
+  loadBalancer: {}

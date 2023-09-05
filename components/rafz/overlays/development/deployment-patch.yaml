@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: rafz
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-cwbq-tenant/byoc-app-wxig/rafz@sha256:c55d99bfe0e2c184e9667d04acd302b59b19f1c618e2ebb717df2eff99a1a199
+        name: my-java-quarkus
+        resources: {}
+status: {}
