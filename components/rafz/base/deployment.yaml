@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: rafz
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-cwbq-tenant/byoc-app-wxig/rafz@sha256:c55d99bfe0e2c184e9667d04acd302b59b19f1c618e2ebb717df2eff99a1a199
         name: my-java-quarkus
         ports:
         - containerPort: 8081
